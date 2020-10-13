@@ -14,7 +14,6 @@ public class DeanerySystem {
 
         System.out.println(day.nextDay());
 
-        System.out.println("git");
 
         
     }
