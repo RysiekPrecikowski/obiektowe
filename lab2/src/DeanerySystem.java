@@ -12,7 +12,7 @@ public class DeanerySystem {
 
         Day day = Day.SUN;
 
-        System.out.println(day.nextDay();
+        System.out.println(day.nextDay());
     }
 
     
