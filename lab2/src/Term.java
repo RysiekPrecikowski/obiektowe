@@ -13,6 +13,15 @@ public class Term {
         return (this.hour + ":" + this.minute + " [" + this.duration + "]");
     }
 
+    public boolean equals(Term term){
+        if (this.hour == term.hour)
+            if (this.minute == term.minute)
+                if (this.duration == term.duration)
+                    return true;
+        
+        return false;
+    }
+
     public boolean earlierThan(Term term){
         if (this.hour < term.hour){
             return true;
