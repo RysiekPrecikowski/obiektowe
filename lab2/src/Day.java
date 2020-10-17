@@ -1,3 +1,4 @@
+import javax.swing.*;
 
 public enum Day {
     MON, TUE, WED, THU, FRI, SAT, SUN;
@@ -21,6 +22,6 @@ public enum Day {
     }
 
     public Day prevDay(){
-        return Day.values()[(this.ordinal() - 1) % Day.values().length];  
+        return Day.values()[(this.ordinal() + Day.values().length - 1) % Day.values().length];
     }
 }

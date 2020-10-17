@@ -1,6 +1,6 @@
 public class Term {
-    public int hour;
-    public int minute;
+    final public int hour;
+    final public int minute;
     public int duration;
 
     public Term(int hour, int minute){
