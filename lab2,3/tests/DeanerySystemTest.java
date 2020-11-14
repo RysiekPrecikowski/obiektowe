@@ -3,7 +3,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class DeanerySystemTest {
-    Term term = new Term(9,45);
+    BasicTerm term = new BasicTerm(9,45);
     @Test
     public void testToString() {
 
@@ -39,8 +39,8 @@ public class DeanerySystemTest {
 
     @Test
     public void testEarlierThan() {
-        Term term2 = new Term(10,15);
-        Term term3 = new Term(9,15);
+        BasicTerm term2 = new BasicTerm(10,15);
+        BasicTerm term3 = new BasicTerm(9,15);
 
         assertTrue(term.earlierThan(term2));
 
@@ -51,8 +51,8 @@ public class DeanerySystemTest {
 
     @Test
     public void testLaterThan() {
-        Term term2 = new Term(10,15);
-        Term term3 = new Term(9,15);
+        BasicTerm term2 = new BasicTerm(10,15);
+        BasicTerm term3 = new BasicTerm(9,15);
 
         assertFalse(term.laterThan(term2));
 
@@ -63,7 +63,7 @@ public class DeanerySystemTest {
 
     @Test
     public void testEndTermAnotherObject() {
-        Term term2 = new Term(10,15);
+        BasicTerm term2 = new BasicTerm(10,15);
         assertEquals("9:45 [30]", term.endTerm(term2).toString());
     }
 
